@@ -1,1 +1,42 @@
-,
+.TH man 1 "9 Nov 2022" "0.1" "simple_shell man page"
+
+.SH NAME
+.B simple_shell
+- A basic UNIX command line interpreter created by us.
+
+.SH SYNOPSIS
+./hsh [options] [file]
+- This program is meant to interpret and execute command line arguments read from standard input.
+
+.SH USAGE
+The program is to be compiled this way: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+
+.SH DESCRIPTION
+Simple_Shell is an sh-compatible command language interpreter that executes
+commands read from the standard input.
+
+.SH Return Value
+
+Always 0 for success, other number means failure.
+
+.SH PATH
+
+It will look inside al directions in PATH env variable for executable.
+
+.SH
+
+.SH OPTIONS
+.B simple_shell
+Command options will be typed after the main command followed by a space and a
+ '-' symbol.
+
+.SH EXAMPLE
+
+[command] [options]
+$ ls -l
+
+.SH BUGS
+No known bugs.
+
+.SH AUTHOR
+Leslie Ochieng, Leslie Ochieng.
